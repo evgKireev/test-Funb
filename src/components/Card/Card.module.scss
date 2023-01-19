@@ -1,0 +1,166 @@
+.Card {
+  width: 320px;
+  height: 509px;
+  background-color: transparent;
+  font-family: 'Trebuchet';
+  transition: all 0.5s;
+}
+
+.wrapper {
+  display: inline-block;
+  position: relative;
+  width: 326px;
+  height: 486px;
+  background: #1698d9;
+  border-radius: 12px;
+  box-sizing: border-box;
+  -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
+  margin-bottom: 14px;
+  transition: all 0.5s;
+
+  &:hover {
+    background: #2ea8e6;
+    transition: all 0.5s;
+  }
+}
+
+.CardInner {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 317.5px;
+  height: 477px;
+  -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    .weight {
+      transition: all 0.5s;
+      background-color: #2ea8e6;
+    }
+  }
+}
+
+.CardInfo {
+  padding: 21px 64px 65px 48px;
+}
+
+.CardSubTitle {
+  color: #666666;
+  line-height: 19px;
+  margin-bottom: 5px;
+}
+
+.Title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.categoria {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.desc {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.img {
+  margin-left: -20px;
+}
+.text {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.span {
+  color: #1698d9;
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover {
+    color: #2ea8e6;
+    transition: all 0.5s;
+  }
+}
+
+.satisfied {
+  position: absolute;
+}
+
+.weight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #1698d9;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 22px;
+  position: relative;
+  bottom: 165px;
+  right: -225px;
+  transition: all 0.5s;
+  span {
+    font-size: 27px;
+    line-height: 22px;
+  }
+}
+
+.selected {
+  .wrapper:hover {
+    background: #e52e7a;
+    .weight {
+      background-color: #e52e7a;
+    }
+  }
+  .wrapper {
+    background: #d91667;
+    .weight {
+      background-color: #d91667;
+    }
+  }
+}
+
+.disabled {
+  .CardInner {
+    background-color: #fff;
+    opacity: 60%;
+  }
+  .wrapper {
+    background: #b3b3b3;
+  }
+  pointer-events: none;
+  .text {
+    color: #ffff66;
+    span {
+      color: #ffff66;
+    }
+  }
+  .weight {
+    background-color: #b3b3b3;
+  }
+}
