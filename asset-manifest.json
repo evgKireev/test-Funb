@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/test-Funb/static/css/main.a792d752.css",
+    "main.js": "/test-Funb/static/js/main.f1423d1f.js",
+    "static/media/Pattern.jpg": "/test-Funb/static/media/Pattern.7a351f7a438cc450194b.jpg",
+    "static/media/Rectangle.png": "/test-Funb/static/media/Rectangle.c022be666eb9b355e426.png",
+    "static/media/AnyConv.com__Exo2.0-Thin.woff": "/test-Funb/static/media/AnyConv.com__Exo2.0-Thin.eff19c8fa2af5fab0915.woff",
+    "index.html": "/test-Funb/index.html",
+    "main.a792d752.css.map": "/test-Funb/static/css/main.a792d752.css.map",
+    "main.f1423d1f.js.map": "/test-Funb/static/js/main.f1423d1f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a792d752.css",
+    "static/js/main.f1423d1f.js"
+  ]
+}
